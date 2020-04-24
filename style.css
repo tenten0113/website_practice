@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+/* ========================================
+    全体設定
+========================================= */
+body {
+	color:#474747;
+	font-size: 14px;
+	line-height: 1.4em;
+	font-family: "メイリオ", "Meiryo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color:#474747;
+	text-decoration:none;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+.flex-container{
+	display: flex;
+}
+
+.flex-rightend{
+  margin-left:auto;
+}
+
+div.contents_wrapper{
+	width: 978px;
+	height: inherit;
+	/* background: white; */
+	margin:0 auto;
+}
+
+
+/* ========================================
+    ヘッダー
+========================================= */
+header{
+	width:100%;
+	height:86px;
+	border-top:4px solid #e66464;
+}
+div.header_inner{
+	height:86px;
+	width: 978px;
+	margin:0 auto;
+}
+div.header_inner h1{
+	height: 36px;
+	width:215px;
+	margin:25px 0 25px 0;
+}
+div.header_inner nav{
+	width:auto;
+	height: 36px;
+	margin-top:25px;
+}
+
+header nav ul li{
+	border-left:1px solid #e8e8e8;
+	font-size:16px;	
+	color:#474747;
+	padding-left:25px;
+	padding-right:25px;
+	margin-top:20px;
+}
+header nav ul li:last-child{
+	border-right:1px solid #e8e8e8;
+}
+
+
+/* ========================================
+    メイン画像
+========================================= */
+div#mainImage{
+	width:100%;
+	height:392px;
+	background: url(/images/mainimage.jpg) no-repeat top center;
+	background-size:cover;
+	background-position: fixed;
+}
+div#mainImage div.mainImage_text{
+	width: 978px;
+	height:auto;
+	margin:0 auto;
+  padding:60px 0;
+}
+div#mainImage h2{
+	font-size:30px;
+	line-height: 40px;
+	letter-spacing: 7px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+div#mainImage dl dd{
+	font-size:14px;
+	line-height:21px;
+	color:#474747;
+}
+div#mainImage dl{
+	width:373px;
+}
+
+div#mainImage dl dd{
+margin:20px 0;
+line-height: 21px;
+}
+
+
+
+
+/* ========================================
+    授業内容
+========================================= */
+div#introduction{
+	width: 100%;
+	height: auto;
+	background-color: #ed7c7c;
+}
+div#introduction div.contents_wrapper{
+	width:978px;
+	height: auto;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+div#teacher_list{
+	width: 652px;
+	height:252px;
+	background-color: #fff;
+}
+div#introduction_title{
+	height:43px;
+	margin-bottom:30px;
+}
+div#introduction_title h2{
+	font-size:24px;
+	color:white;
+	font-weight: 900;
+	border-bottom: 4px solid #fff;
+	display:inline-block;
+	padding-bottom:15px;
+	margin-right:26px;
+}
+div#introduction_title h2 span{
+	color: #fff;
+	font-size:14px;
+	display:inline-block;
+}
+/* div#teacher_list */
+div#teacher_list{
+	padding:15px 0 0 15px;
+}
+div#teacher_list h3{
+	font-size:18px;
+	font-weight:900;
+	margin-bottom:10px;
+}
+div#teacher_list dl dt{
+	height:131px;
+	margin-bottom:8px;
+}
+div#teacher_list dl dd.teacher_name{
+	font-size:14px;
+	font-weight:900;
+}
+div#teacher_list dl dd.teacher_comment{
+	font-size:12px;
+	line-height:18px;
+}
+div#teacher_list ul li{
+	width:200px;
+	height:auto;
+	margin-right:16px;
+}
+
+div#teacher_list ul li:last-child{
+	margin-right:0;
+}
+/* -----------course_list-------- */
+div#course_list{
+	height:auto;
+	width:286px;
+	background-color:#fff;
+}
+div#course_list h4{
+font-size:18px;
+font-weight:900;
+padding:15px 15px 10px 15px;	
+}
+div#course_list ul li{
+	border-top:1px solid #eae9e7;
+	padding:15px;
+}
+div#course_list ul li a{
+	display: block;
+	height: 37px;
+	width:auto;
+	line-height: 37px;
+	padding-left:50px;
+}
+div#course_list ul li#ps a{
+	background:url(/images/icon_photoshop.png) no-repeat left center;
+}
+div#course_list ul li#ai a{
+  background: url(/images/icon_ai.png) no-repeat;
+}
+div#course_list ul li#pr a{
+  background: url(/images/icon_pr.png) no-repeat;
+}
+div#course_list ul li#fw a{
+  background: url(/images/icon_fw.png) no-repeat;
+}
+div#course_list ul li#dw a{
+	background:url(/images/icon_dw.png) no-repeat;
+
+}
+/* ========================================
+    料金体制
+========================================= */
+div#price{
+	width: 100%;
+	height: 503px;
+	background-color: #fcfbfb;
+}
+div#price div.contents_wrapper{
+	width: 978px;
+	height: inherit;
+}
+div#price div#price_inner{
+	width:978px;
+	height:auto;	
+}
+div#price_title h3{
+	margin-top:30px;
+	font-size:24px;
+	color:#474747;
+	font-weight: 900;
+	border-bottom: 4px solid #e66464;
+	display:inline-block;
+	padding-bottom:15px;
+	margin-bottom:30px;
+	margin-right: 28px;
+}
+div#price_inner ul li{
+	width:276px;
+	height: auto;
+	background-color:#fff;
+	margin-right:30px;
+	padding:15px;
+	position: relative;
+	box-shadow:2px 2px 2px #ccc;
+}
+div#price_inner ul li:last-child{
+	margin-right:0;
+}
+/* ーーーnakami ーーーー */
+div#price_inner ul li p.plan{
+	font-size: 18px;
+	font-weight:bold;
+}
+div#price_inner ul li p.price{
+	color:#e56d7c;
+	font-size:28px;
+	font-weight:900;
+	margin:15px 0 30px 0;
+}
+div#price_inner ul li p.price span{
+	font-size:16px;
+	margin-left:10px;
+}
+div#price_inner ul li dl dd{
+	border-top:1px dotted #eae9e7;
+}
+div#price_inner ul li dl{
+	border-bottom:1px dotted #eae9e7;
+	line-height: 45px;
+	margin-bottom:30px;
+}
+div#price_inner ul li dl dd:last-child{
+	padding-bottom:30px;
+	display: block;
+}
+div#price a{
+	color:#fff;
+	font-weight: 900;
+	background-color: #e56d7c;
+	display: inline-block;
+	border-radius:5px;
+	padding:0 25px;
+	line-height:35px;
+	position: absolute;
+	left:15px;
+	bottom:15px;
+}
+/* ========================================
+    フッター
+========================================= */
+footer{
+	background-color: #474747;
+	height: 73px;
+	color:#fff;
+	text-align: center;
+	line-height: 73px;
+}
